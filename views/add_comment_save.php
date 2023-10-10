@@ -1,10 +1,5 @@
 <?php
 
-$host = 'localhost';
-$dbname = 'db_local';
-$username = 'root';
-$password = 'root';
-
 $name = $_POST['name'];
 $age = $_POST['age'];
 $comment = $_POST['comment'];

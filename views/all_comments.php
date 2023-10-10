@@ -5,11 +5,6 @@
 </div>
 <?php
 
-$host = 'localhost';
-$dbname = 'db_local';
-$username = 'root';
-$password = 'root';
-
 try {
     $conn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
     // Устанавливаем режим ошибок PDO на исключения

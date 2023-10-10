@@ -1,4 +1,5 @@
 .DS_Store
+.env
 
 ##### Windows
 # Windows thumbnail cache files
