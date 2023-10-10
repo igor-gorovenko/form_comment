@@ -1,5 +1,7 @@
 <?php
 
+require_once 'db_connection.php';
+
 $request_uri = $_SERVER['REQUEST_URI'];
 
 switch($request_uri){
