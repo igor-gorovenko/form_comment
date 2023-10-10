@@ -6,19 +6,19 @@ $request_uri = $_SERVER['REQUEST_URI'];
 
 switch($request_uri){
     case '/':
-        include 'views/menu.php';
+        include 'controllers/menu.php';
         break;
     case '/all_comments':
-        include 'views/all_comments.php';
+        include 'controllers/all_comments.php';
         break;
     case '/add_comment':
-        include 'views/add_comment.php';
+        include 'controllers/add_comment.php';
         break;
     case '/add_comment_save':
-        include 'views/add_comment_save.php';
+        include 'controllers/add_comment_save.php';
         break;
     default:
-        include 'views/404.php';
+        include 'controllers/404.php';
         break;
 }
 
