@@ -1,8 +1,8 @@
 <?php
 
-require_once __DIR__ . '/vendor/autoload.php';
+require_once '../vendor/autoload.php';
 
-$dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv\Dotenv::createImmutable('../');
 $dotenv->load();
 
 $host = $_ENV['DB_HOST'];
@@ -17,5 +17,3 @@ try {
 } catch (PDOException $e) {
     die("Ошибка соединения: " . $e->getMessage());
 }
-
-?>

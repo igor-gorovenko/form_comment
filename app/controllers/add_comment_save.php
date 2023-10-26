@@ -9,13 +9,10 @@ try {
     $conn->exec($sql);
     echo "New record created successfully";
     echo "<br> name: $name, age: $age, comment: $comment";
-
 } catch (PDOException $error) {
     echo $sql . "<br>" . $error->getMessage();
 }
 
 $conn = null;
 
-require 'views/add_comment_save.php';
-
-?>
+require '../app/templates/add_comment_save.php';

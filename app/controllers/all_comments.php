@@ -1,6 +1,6 @@
 <?php
 
-require 'views/all_comments.php';
+require '../app/templates/all_comments.php';
 
 try {
     $sql = "SELECT * FROM comment";
@@ -20,5 +20,3 @@ try {
 
 // Закрываем соединение
 $conn = null;
-
-?>
