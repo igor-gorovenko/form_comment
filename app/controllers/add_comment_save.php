@@ -1,14 +1,14 @@
 <?php
 
-$name = $_POST['name'];
+$firstname = $_POST['firstname'];
 $age = $_POST['age'];
 $comment = $_POST['comment'];
 
 try {
-    $sql = "INSERT INTO comment (name, age, comment) VALUES ('$name', '$age', '$comment')";
+    $sql = "INSERT INTO comment (firstname, age, comment) VALUES ('$firstname', '$age', '$comment')";
     $conn->exec($sql);
     echo "New record created successfully";
-    echo "<br> name: $name, age: $age, comment: $comment";
+    echo "<br> firstname: $firstname, age: $age, comment: $comment";
 } catch (PDOException $error) {
     echo $sql . "<br>" . $error->getMessage();
 }

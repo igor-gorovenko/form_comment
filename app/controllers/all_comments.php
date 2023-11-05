@@ -12,10 +12,10 @@ try {
 
     // Выводим данные на странице
     while ($row = $stmt->fetch()) {
-        echo $row["id"] . ". " . $row["name"] . " (" . $row["age"] . ")" . ": " . $row["comment"] . "<br>";
+        echo $row["id"] . ". " . $row["firstname"] . " (" . $row["age"] . ")" . ": " . $row["comment"] . "<br>";
     }
 } catch (PDOException $error) {
-    echo "Ошибка: " . $error->getMessage();
+    echo "Error: " . $error->getMessage();
 }
 
 // Закрываем соединение

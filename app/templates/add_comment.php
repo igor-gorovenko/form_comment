@@ -2,8 +2,8 @@
 
 <form action="/add_comment_save" method="post">
     <div>
-        <label for="name">Name:</label>
-        <input name="name" id="name" type="text">
+        <label for="firstname">Name:</label>
+        <input name="firstname" id="firstname" type="text">
     </div>
     <div>
         <label for="age">Age:</label>
