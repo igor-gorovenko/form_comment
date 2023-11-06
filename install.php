@@ -1,7 +1,7 @@
 <?php
 
 
-require __DIR__ . '/public/db_connection.php';
+require __DIR__ . '/app/db_connection.php';
 
 if ($conn) {
 

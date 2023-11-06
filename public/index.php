@@ -1,6 +1,6 @@
 <?php
 
-require_once 'db_connection.php';
+require_once __DIR__ . '/../app/db_connection.php';
 
 $request_uri = $_SERVER['REQUEST_URI'];
 
