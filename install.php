@@ -7,7 +7,7 @@ if ($conn) {
 
     echo "Connection established successfully\n";
 
-    $sql = "CREATE TABLE IF NOT EXISTS `db_local`.`comment` (
+    $sql = "CREATE TABLE IF NOT EXISTS `form_comment`.`comment` (
             `id` INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
             `firstname` VARCHAR(40),
             `age` INT(3),
